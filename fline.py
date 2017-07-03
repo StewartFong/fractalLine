@@ -1,0 +1,5 @@
+bds = input('please enter the name of the data file')
+di = input('please input the value of d')
+di = int(di)
+kk = input('Please input the iterational times')
+kk = int(kk)
