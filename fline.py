@@ -54,6 +54,10 @@ for k in range(kk):
     f = []
 pl.plot(x,y)
 pl.show()
+with open('%sI%d.result'%(bds,kk),'w') as f:
+     for i in range(len(x)):
+         f.write('(%f,%f)'%(x[i],y[i]))
+
             
             
         
