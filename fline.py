@@ -22,8 +22,8 @@ for i in range(2):
 x = z[0]
 y = z[1]
 xl = x[-1]-x[0]
-pl.plot(x,y)
-pl.show() 
+#pl.plot(x,y)
+#pl.show() 
 n = len(x)
 nn = n-1
 a = []
@@ -54,7 +54,7 @@ for k in range(kk):
     f = []
 pl.plot(x,y)
 pl.show()
-with open('%sI%d.result'%(bds,kk),'w') as f:
+with open('%sI%d.result'%(bds[0:-5],kk),'w') as f:
      for i in range(len(x)):
          f.write('(%f,%f)'%(x[i],y[i]))
 
